@@ -10,10 +10,22 @@
     float: left;
     width: 300px / 960px * 100%;;
   }
-  
+
   img { max-width: 100%; }
 
   .plan.premium {
     margin: 0 30px/960px * 100%;
+  }
+
+  @media all and (max-width: 420px) {
+    .plan{
+    min-width: 300px;
+    margin:  0 0 10px 50px/420px * 100%;
+    display: block;
+    }
+
+    .plan.premium {
+    margin: 0 0 10px 50px/420px * 100%;
+    }
   }
 }
